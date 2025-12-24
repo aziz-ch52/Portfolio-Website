@@ -1,1227 +1,297 @@
-<!-- 
-    SECTION DETAIL'S:-
-    |>- HEADER 
-    |>- SMALL INTRO
-    |>- EDUCATION
-    |>- ABOUT ME
-    |>- SKILL'S
-    |>- PROJECT'S
-    |>- CERTIFICATE'S
-    |>- EXPERIENCE
-    |>- FOOTER {CONTACT DETAIL'S}
- -->
-    
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio Website</title>
-
-    <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet">
-
-    <!-- Custom Stylesheet -->
-    <link href="CSS/style.css" rel="stylesheet" type="text/css">
-
-    <style>
-        * {
-  padding: 0px;
-  margin: 0px;
-}
-
-
-::selection {
-  background-color: red;
-  /* Highlight color */
-  color: white;
-  /* Text color */
-}
-
-
-/* --------------------------------------------------------- */
-
-/* FOR HEADER SECTION {NAVBAR-RESPONSIVE} */
-
-.nav_logo:hover {
-  transform: scale(1.05);
-}
-
-.navbar {
-  background-color: white;
-}
-
-.navbar a {
-  color: black !important;
-}
-
-.navbar a:hover {
-  color: #ef5356 !important;
-  border-bottom: 1px solid #ef5356;
-}
-
-/* Custom styles for the toggle button */
-.navbar-toggler {
-  border-color: black;
-  /* Change the border color to black */
-}
-
-.navbar-toggler .navbar-toggler-icon {
-  background-image: url("data:image/svg+xml,%3csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3e%3cpath stroke='rgba(0, 0, 0, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
-  /* Change the icon color to black */
-}
-
-.nav_links:hover {
-  transform: scale(1.05);
-}
-
-
-
-/* --------------------------------------------------------- */
-
-/* FOR MAIN SECTION */
-
-/* ABOUT ME SECTION */
-
-#aboutme {
-  -webkit-box-shadow: 0px 0px 146px 60px rgba(237, 43, 49, 0.9);
-  /* For older WebKit browsers (Safari, Chrome) */
-  -moz-box-shadow: 0px 0px 146px 60px rgba(237, 43, 49, 0.9);
-  /* For older Mozilla browsers (Firefox) */
-  box-shadow: 0px 0px 146px 60px rgba(237, 43, 49, 0.9);
-  /* Standard box-shadow property */
-}
-
-
-.intro_para {
-  font-size: 17px;
-}
-
-.intro_img {
-  justify-content: center;
-  align-items: center;
-  padding-left: 200px !important;
-}
-
-/* --------------------------------------------------------- */
-
-/* EDUCATIONAL SECTION */
-.education-section {
-  max-width: 1200px;
-  margin: 50px auto;
-  padding: 20px;
-  background: #ffffff;
-  border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-.education-section h2 {
-  text-align: center;
-  font-size: 2.5rem;
-  margin-bottom: 20px;
-  position: relative;
-}
-
-.education-section h2::after {
-  content: '';
-  display: block;
-  width: 100px;
-  height: 3px;
-  background-color: #ef5356;
-  margin: 10px auto 0;
-  border-radius: 5px;
-}
-
-
-.timeline {
-  position: relative;
-  padding: 20px 0;
-  margin-top: 20px;
-}
-
-.timeline::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 4px;
-  height: 100%;
-  background-color: #ef5356;
-}
-
-.timeline-item {
-  position: relative;
-  width: 50%;
-  padding: 20px;
-  box-sizing: border-box;
-}
-
-.timeline-item:nth-child(odd) {
-  left: 0;
-}
-
-.timeline-item:nth-child(even) {
-  left: 50%;
-}
-
-.timeline-item .content {
-  position: relative;
-  background: #ecf0f1;
-  padding: 20px;
-  border-radius: 10px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-}
-
-.timeline-item h3 {
-  font-size: 1.5rem;
-}
-
-.timeline-item p {
-  margin: 10px 0;
-}
-
-.timeline-item span {
-  display: block;
-  margin-bottom: 5px;
-  font-weight: bold;
-  color: red;
-}
-
-.timeline-item::after {
-  content: '';
-  position: absolute;
-  top: 20px;
-  width: 20px;
-  height: 20px;
-  background: black;
-  border-radius: 50%;
-  border: 4px solid #ffffff;
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
-}
-
-.timeline-item:nth-child(odd)::after {
-  right: -10px;
-}
-
-.timeline-item:nth-child(even)::after {
-  left: -10px;
-}
-
-@media screen and (max-width: 768px) {
-  .timeline-item {
-    width: 100%;
-    left: 0 !important;
-  }
-
-  .timeline::before {
-    left: 20px;
-  }
-
-  .timeline-item::after {
-    left: 10px;
-  }
-
-  .timeline-item .content {
-    margin-left: 40px;
-  }
-}
-
-
-/* ------------------------------------------------------ */
-/* SKILL SECTION */
-
-.skill_section {
-  max-width: 1200px;
-  margin: 50px auto;
-  padding: 20px;
-  background: #ffffff;
-  border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-
-
-
-ul {
-  list-style-type: square;
-  padding-left: 20px;
-}
-
-.skill-category {
-  font-weight: bold;
-  color: #4caf50;
-}
-
-.skill-item {
-  color: #333;
-}
-
-.progress-bar {
-  background-color: #ef5356;
-}
-
-/* FUTURE SKILL SECTION */
-
-.card {
-  position: relative;
-  overflow: hidden;
-}
-
-.popup {
-  position: absolute;
-  bottom: 10px;
-  left: 0;
-  right: 0;
-  background-color: rgba(0, 0, 0, 0.7);
-  color: white;
-  padding: 10px;
-  border-radius: 5px;
-  font-size: 14px;
-  display: none;
-  opacity: 0;
-  transition: opacity 0.3s ease-in-out;
-}
-
-.hover-card:hover .popup {
-  display: block;
-  opacity: 1;
-}
-
-.card-body {
-  position: relative;
-  padding: 20px;
-}
-
-.card-body img {
-  width: 100%;
-  height: auto;
-  transition: transform 0.3s ease;
-}
-
-.hover-card:hover .card-body img {
-  transform: scale(1.05);
-}
-
-.popup p {
-  margin: 0;
-}
-
-
-/* ------------------------------------------------------ */
-
-/* PORTFOLIO SECTION */
-.portfolio-section {
-  max-width: 1200px;
-  margin: 50px auto;
-  padding: 20px;
-  background: #ffffff;
-  border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-.portfolio-section h2 {
-  text-align: center;
-  font-size: 2.5rem;
-  color: black;
-  margin-bottom: 20px;
-  position: relative;
-}
-
-.portfolio-section h2::after {
-  content: '';
-  display: block;
-  width: 100px;
-  height: 3px;
-  background: #ef5356;
-  margin: 10px auto 0;
-  border-radius: 5px;
-}
-
-.portfolio-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 20px;
-  margin-top: 20px;
-}
-
-.portfolio-item {
-  background: #ecf0f1;
-  border-radius: 10px;
-  overflow: hidden;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s, box-shadow 0.3s;
-}
-
-.portfolio-item:hover {
-  transform: scale(1.05);
-  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
-}
-
-.portfolio-item img {
-  width: 100%;
-  height: auto;
-}
-
-.portfolio-item .content {
-  padding: 15px;
-  text-align: center;
-}
-
-.portfolio-item h3 {
-  font-size: 1.5rem;
-  color: black;
-  margin-bottom: 10px;
-}
-
-.portfolio-item p {
-  color: black;
-  font-size: 1rem;
-  margin-bottom: 10px;
-}
-
-.portfolio-item a {
-  display: inline-block;
-  margin-top: 10px;
-  padding: 10px 20px;
-  font-size: 1rem;
-  color: #ffffff;
-  background: #ef5356;
-  border-radius: 5px;
-  text-decoration: none;
-  transition: background 0.3s;
-}
-
-.portfolio-item a:hover {
-  background: #050505;
-}
-
-/* ------------------------------------------------------ */
-
-/* CERTIFICATION SECTION */
-
-#certificates {
-  max-width: 1200px;
-  margin: 50px auto;
-  padding: 20px;
-  background: #ffffff;
-  border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-.certificate-card {
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.certificate-card:hover {
-  transform: scale(1.05);
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
-}
-
-.certificate-image {
-  height: 200px;
-  object-fit: cover;
-  border-bottom: 1px solid #ddd;
-}
-
-.card-title {
-  font-weight: 600;
-}
-
-.card-text {
-  margin-bottom: 5px;
-}
-
-/* FOR IMAGE FIT & RESPONSIVE */
-.certificates-section {
-  background-color: #f4f4f4;
-  padding: 80px 20px;
-}
-
-.certificates-section h2 {
-  font-size: 2.5rem;
-  font-weight: bold;
-  color: #333;
-  margin-bottom: 40px;
-}
-
-.certificate-card {
-  background: #fff;
-  border: none;
-  border-radius: 10px;
-  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
-  overflow: hidden;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.certificate-card:hover {
-  transform: translateY(-10px);
-  box-shadow: 0 15px 25px rgba(0, 0, 0, 0.2);
-}
-
-.certificate-image-wrapper {
-  width: 100%;
-  height: 250px;
-  overflow: hidden;
-}
-
-.certificate-image {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  transition: transform 0.3s ease;
-}
-
-.certificate-card:hover .certificate-image {
-  transform: scale(1.1);
-}
-
-.certificate-details {
-  padding: 20px;
-  text-align: center;
-}
-
-.certificate-details h3 {
-  font-size: 1.25rem;
-  font-weight: 600;
-  color: #444;
-  margin-bottom: 10px;
-}
-
-.certificate-details p {
-  font-size: 0.95rem;
-  color: #666;
-  margin: 0;
-}
-
-.certificate-details p:last-child {
-  font-size: 0.85rem;
-  color: #888;
-  margin-top: 5px;
-}
-
-/* Responsive Adjustments */
-@media (max-width: 768px) {
-  .certificate-image-wrapper {
-    height: 200px;
-  }
-
-  .certificate-details h3 {
-    font-size: 1.1rem;
-  }
-
-  .certificate-details p {
-    font-size: 0.9rem;
-  }
-}
-
-/* ------------------------------------------------------ */
-
-/* FOOTER SECTION */
-
-.footer-section {
-  background: linear-gradient(135deg, #1a1a1a, #2b2b2b);
-  color: #ddd;
-  padding: 50px 0;
-  max-width: 1200px;
-  margin: 50px auto;
-  padding: 20px;
-  /* background: #ffffff; */
-  border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-.footer-title {
-  font-size: 1.5rem;
-  font-weight: bold;
-  color: #fff;
-  margin-bottom: 15px;
-}
-
-.footer-description {
-  font-size: 0.95rem;
-  line-height: 1.6;
-  color: #bbb;
-}
-
-.footer-nav .list-inline-item {
-  margin: 0 10px;
-}
-
-.footer-nav a {
-  color: #ddd;
-  font-size: 1rem;
-  text-decoration: none;
-  transition: color 0.3s ease;
-}
-
-.footer-nav a:hover {
-  color: #ef5356;
-}
-
-.social-links {
-  display: flex;
-  justify-content: center;
-  gap: 15px;
-}
-
-.social-icon {
-  font-size: 1.8rem;
-  color: #ddd;
-  padding: 10px;
-  border: 2px solid transparent;
-  border-radius: 50%;
-  transition: all 0.4s ease-in-out;
-}
-
-.social-icon:hover {
-  transform: scale(1.2);
-  border-color: #ef5356;
-  color: #ef5356;
-}
-
-.github:hover {
-  background-color: #24292e;
-}
-
-.instagram:hover {
-  background-color: #e4405f;
-}
-
-.linkedin:hover {
-  background-color: #0077b5;
-}
-
-.email:hover {
-  background-color: #d44638;
-}
-
-.footer-section p {
-  font-size: 0.85rem;
-  margin-bottom: 0;
-  color: #999;
-}
-
-/* Responsive Design */
-@media (max-width: 768px) {
-  .footer-title {
-    font-size: 1.3rem;
-  }
-
-  .social-icon {
-    font-size: 1.5rem;
-  }
-}
-
-/* END OF FOOTER SECTION */
-    </style>
+    <title>Aziz Chharchhodawala | Data Analyst</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
-    <!-- Header Section -->
-    <header>
-        <div class="container-fluid">
-            <nav class="navbar navbar-expand-lg navbar-light rounded-pill my-2">
-                <div class="container-fluid d-flex justify-content-between align-items-center">
 
-                    <!-- Logo Section -->
-                    <a class="navbar-brand text-danger px-5 nav_logo" href="#">
-                        <img src="Assets/Images/nav_logo1.png" height="50px" width="50px" alt="logo_a">
+    <nav class="navbar">
+        <div class="logo">AC<span class="dot">.data</span></div>
+        <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#contact" class="btn-nav">Contact Me</a></li>
+        </ul>
+        <div class="hamburger">
+            <i class="fas fa-bars"></i>
+        </div>
+    </nav>
 
-                    </a>
-
-                    <!-- Toggle Button for Mobile -->
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-
-                    <!-- Navigation Menu -->
-                    <div class="collapse navbar-collapse" id="navbarNav">
-                        <ul class="navbar-nav ms-auto">
-                            <li class="nav-item">
-                                <a class="nav-link active nav_links" href="#">Home</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link nav_links" href="#">About Me</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link nav_links" href="#">Resume</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link nav_links" href="#">Skills</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link nav_links" href="#">Contact</a>
-                            </li>
-
-                        </ul>
+    <header class="hero">
+        <div class="container hero-container">
+            <div class="hero-content fade-in-up">
+                <h1>Aziz <br> <span class="highlight">Chharchhodawala</span></h1>
+                <h2 class="subtitle">Data Analyst | SQL-Driven Business Insights</h2>
+                <p>BCA student specializing in SQL, Python, and Power BI. I convert raw data into clear, decision-ready business insights. Focused on real business problems — not academic theory.</p>
+                <div class="hero-btns">
+                    <a href="#projects" class="btn btn-primary">View Case Studies</a>
+                    <a href="#" class="btn btn-outline">Download Resume</a>
+                </div>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                    <a href="#"><i class="fab fa-github"></i></a>
+                </div>
+            </div>
+            
+            <div class="hero-visual fade-in-up delay-200">
+                <div class="mockup-card">
+                    <div class="mockup-header">
+                        <span class="dot red"></span>
+                        <span class="dot yellow"></span>
+                        <span class="dot green"></span>
+                        <span class="mockup-title">Sales_Performance_Q4.sql</span>
+                    </div>
+                    <div class="mockup-body">
+                        <div class="stat-row">
+                            <div class="stat">
+                                <h3>1.2M</h3>
+                                <p>Rows Analyzed</p>
+                            </div>
+                            <div class="stat">
+                                <h3>38%</h3>
+                                <p>Faster Queries</p>
+                            </div>
+                            <div class="stat">
+                                <h3>50+</h3>
+                                <p>Insights</p>
+                            </div>
+                        </div>
+                        <div class="chart-visual">
+                            <div class="bar" style="height: 40%"></div>
+                            <div class="bar" style="height: 70%"></div>
+                            <div class="bar" style="height: 50%"></div>
+                            <div class="bar" style="height: 90%"></div>
+                            <div class="bar" style="height: 60%"></div>
+                            <div class="bar" style="height: 80%"></div>
+                        </div>
                     </div>
                 </div>
-            </nav>
+            </div>
         </div>
     </header>
 
-
-
-
-    <!-- HEADER END'S HERE -->
-    <br />
-    <br />
-
-
-
-    <!-- MAIN SECTION HERE -->
-
-    <main>
-
-        <!-- ABOUT ME SECTION -->
-        <section id="about_me">
-            <div class="container">
-                <div class="row">
-                    <div class="col-6 text-align-center justify-content-center align-items-center"
-                        style="display: inline; justify-content: center;">
-                        <h1> HEY, I'M AZIZ <br> CHHARCHHODAWALA</h1>
-                        <br>
-                        <h3 style="color: red;">
-                            <span style="border-bottom: 2px solid red;"> "FULL STACK DEVELOPER" </span>
-                        </h3>
-                        <br>
-                        <p> Hello! I'm a BCA student at Sigma University in Vadodara, passionate about technology and
-                            problem-solving. My journey in software development is driven by a continuous desire to
-                            learn
-                            and evolve, with the aim of becoming a proficient Full Stack Developer. I enjoy programming,
-                            creating real-world applications, and designing user-friendly interfaces. My interests
-                            include
-                            UI/UX design and exploring new skills and emerging technologies, especially in Artificial
-                            Intelligence and Machine Learning. I thrive on solving complex problems and building
-                            projects
-                            that push my boundaries, with the ultimate goal of specializing in both front-end and
-                            back-end
-                            technologies to contribute to impactful projects.</p>
-                        <br>
-                        <button type="button" class="btn btn-dark"> KNOW MORE ABOUT ME</button>
-                    </div>
-
-                    <div class="col-6 d-flex justify-content-center align-items-center intro_img">
-                        <img src="Assets/Images/Image 1.svg" alt="AZIZ" height="500px" width="500px">
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <br>
-        <!-- EDUCATION SECTION-->
-        <br>
-
-        <section class="education-section">
-            <h2>Education</h2>
-            <div class="timeline">
-                <div class="timeline-item">
-                    <div class="content">
-                        <h3>Bachelor of Computer Applications (BCA)</h3>
-                        <span>Sigma University, Vadodara (2024 - 2027)</span>
-                        <p>Currently pursuing BCA with a focus on programming, software development, and data
-                            structures.</p>
-                    </div>
-                </div>
-
-                <div class="timeline-item">
-                    <div class="content">
-                        <h3>Higher Secondary Education</h3>
-                        <span>S.t Stephen's High School (2022 - 2024)</span>
-                        <p>Completed 12th grade with 70% aggregate. Specialized in Commerce.</p>
-                    </div>
-                </div>
-
-                <div class="timeline-item">
-                    <div class="content">
-                        <h3>Secondary School Education</h3>
-                        <span>Burhani English Medium School(2020 - 2022)</span>
-                        <p>Completed 10th grade with an excellent score of 85%. Focused on foundational subjects.</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <br>
-
-        <!-- SKILL SECTION -->
-
-        <section class="skill_section">
-            <div class="container my-5">
-                <h1 class="text-center mb-5">Skills</h1>
-                <hr>
-                <br>
-                <div class="row">
-
-                    <!-- Front-End Development -->
-                    <div class="col-md-6">
-                        <h3>Front-End Development</h3>
-                        <br>
-                        <div class="mb-3">
-                            <div>HTML5 <span class="float-end">90%</span></div>
-                            <div class="progress">
-                                <div class="progress-bar" style="width: 90%;">90%</div>
-                            </div>
-                        </div>
-                        <div class="mb-3">
-                            <div>CSS3 <span class="float-end">85%</span></div>
-                            <div class="progress">
-                                <div class="progress-bar" style="width: 85%;">85%</div>
-                            </div>
-                        </div>
-                        <div class="mb-3">
-                            <div>JavaScript (ES6+) <span class="float-end">75%</span></div>
-                            <div class="progress">
-                                <div class="progress-bar" style="width: 75%;">75%</div>
-                            </div>
-                        </div>
-                        <div class="mb-3">
-                            <div>React.js <span class="float-end">70%</span></div>
-                            <div class="progress">
-                                <div class="progress-bar" style="width: 70%;">70%</div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Back-End Development -->
-                    <div class="col-md-6">
-                        <h3>Back-End Development</h3>
-                        <br>
-                        <div class="mb-3">
-                            <div>Node.js <span class="float-end">75%</span></div>
-                            <div class="progress">
-                                <div class="progress-bar" style="width: 75%;">75%</div>
-                            </div>
-                        </div>
-                        <div class="mb-3">
-                            <div>Express.js <span class="float-end">70%</span></div>
-                            <div class="progress">
-                                <div class="progress-bar" style="width: 70%;">70%</div>
-                            </div>
-                        </div>
-                        <div class="mb-3">
-                            <div>Python/Django <span class="float-end">60%</span></div>
-                            <div class="progress">
-                                <div class="progress-bar" style="width: 60%;">60%</div>
-                            </div>
-                        </div>
-                        <div class="mb-3">
-                            <div>Database Management (SQL/NoSQL) <span class="float-end">80%</span></div>
-                            <div class="progress">
-                                <div class="progress-bar" style="width: 80%;">80%</div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <br>
-                <!-- Soft Skills -->
-                <div class="row">
-                    <div class="col-md-6">
-                        <h3>Soft Skills</h3>
-                        <br>
-                        <div class="mb-3">
-                            <div>Communication <span class="float-end">90%</span></div>
-                            <div class="progress">
-                                <div class="progress-bar" style="width: 90%;">90%</div>
-                            </div>
-                        </div>
-                        <div class="mb-3">
-                            <div>Teamwork <span class="float-end">85%</span></div>
-                            <div class="progress">
-                                <div class="progress-bar" style="width: 85%;">85%</div>
-                            </div>
-                        </div>
-                        <div class="mb-3">
-                            <div>Problem-Solving <span class="float-end">75%</span></div>
-                            <div class="progress">
-                                <div class="progress-bar" style="width: 75%;">75%</div>
-                            </div>
-                        </div>
-                        <div class="mb-3">
-                            <div>Time Management <span class="float-end">70%</span></div>
-                            <div class="progress">
-                                <div class="progress-bar" style="width: 70%;">70%</div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <br>
-                    <!-- Additional Skills -->
-                    <div class="col-md-6">
-                        <h3>Additional Skills</h3>
-                        <br>
-                        <div class="mb-3">
-                            <div>Mobile App Development <span class="float-end">60%</span></div>
-                            <div class="progress">
-                                <div class="progress-bar" style="width: 60%;">60%</div>
-                            </div>
-                        </div>
-                        <div class="mb-3">
-                            <div>Data Structures & Algorithms <span class="float-end">70%</span></div>
-                            <div class="progress">
-                                <div class="progress-bar" style="width: 70%;">70%</div>
-                            </div>
-                        </div>
-                        <div class="mb-3">
-                            <div>DevOps Basics <span class="float-end">50%</span></div>
-                            <div class="progress">
-                                <div class="progress-bar" style="width: 50%;">50%</div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <br>
-            <!-- CARD SECTION  -->
-            <hr>
-            <br>
-
-            <h1 class="text-center mb-5"> Future Plan's</h>
-
-                <div class="container my-5">
-                    <div class="row">
-                        <!-- Card 1 -->
-                        <div class="col-md-4 mb-4">
-                            <div class="card shadow hover-card">
-                                <div class="card-body text-center">
-                                    <h5 class="card-title">AI Engineering</h5>
-                                    <img src="Assets/Images/Ai Engineering.png" class="img-fluid"
-                                        alt="AI Engineering">
-                                    <p class="card-text text-muted fs-6">
-                                        AI Engineers build and deploy intelligent systems that can analyze data, learn
-                                        from it, and make decisions.
-                                    </p>
-                                    <!-- <div class="popup">
-                                        <p>AI Engineers focus on implementing machine learning models, natural language processing, and robotics to solve real-world problems using AI technologies.</p>
-                                    </div> -->
-                                </div>
-                            </div>
-                        </div>
-                        <!-- Card 2 -->
-                        <div class="col-md-4 mb-4">
-                            <div class="card shadow hover-card">
-                                <div class="card-body text-center">
-                                    <h5 class="card-title">Software Engineering</h5>
-                                    <img src="Assets/Images/Software Engineering.png" class="img-fluid"
-                                        alt="Software Engineering">
-                                    <p class="card-text text-muted fs-6">
-                                        Software Engineers design, develop, and maintain software applications.
-                                    </p>
-                                    <!-- <div class="popup">
-                                        <p>Software Engineers ensure functionality, scalability, and performance while working across various domains, including web development, system programming, and mobile applications.</p>
-                                    </div> -->
-                                </div>
-                            </div>
-                        </div>
-                        <!-- Card 3 -->
-                        <div class="col-md-4 mb-4">
-                            <div class="card shadow hover-card">
-                                <div class="card-body text-center">
-                                    <h5 class="card-title">Data Scientist</h5>
-                                    <img src="Assets/Images/Data Scientist.png" class="img-fluid"
-                                        alt="Data Scientist">
-                                    <p class="card-text text-muted fs-6">
-                                        Data Scientists extract insights from complex datasets to support
-                                        decision-making.
-                                    </p>
-                                    <!-- <div class="popup">
-                                        <p>Data Scientists use statistical methods, programming, and machine learning to analyze and visualize data, uncover trends, and predict outcomes.</p>
-                                    </div> -->
-                                </div>
-                            </div>
-                        </div>
-                        <!-- Card 4 -->
-                        <div class="col-md-4 mb-4">
-                            <div class="card shadow hover-card">
-                                <div class="card-body text-center">
-                                    <h5 class="card-title">Machine Learning</h5>
-                                    <img src="Assets/Images/Machine Learning.png" class="img-fluid"
-                                        alt="Machine Learning">
-                                    <p class="card-text text-muted fs-6">
-                                        Machine Learning involves creating algorithms that enable systems to learn
-                                        patterns from data.
-                                    </p>
-                                    <!-- <div class="popup">
-                                        <p>Machine Learning powers tasks like recommendation systems, fraud detection, and predictive modeling.</p>
-                                    </div> -->
-                                </div>
-                            </div>
-                        </div>
-                        <!-- Card 5 -->
-                        <div class="col-md-4 mb-4">
-                            <div class="card shadow hover-card">
-                                <div class="card-body text-center">
-                                    <h5 class="card-title">Deep Learning</h5>
-                                    <img src="Assets/Images/Deep Learning.png" class="img-fluid" alt="Deep Learning">
-                                    <p class="card-text text-muted fs-6">
-                                        Deep Learning is a subset of machine learning that uses neural networks to
-                                        simulate human-like decision-making.
-                                    </p>
-                                    <!-- <div class="popup">
-                                        <p>Deep Learning powers AI applications like image recognition, speech processing, and autonomous systems.</p>
-                                    </div> -->
-                                </div>
-                            </div>
-                        </div>
-                        <!-- Card 6 -->
-                        <div class="col-md-4 mb-4">
-                            <div class="card shadow hover-card">
-                                <div class="card-body text-center">
-                                    <h5 class="card-title">Data Visualization</h5>
-                                    <img src="Assets/Images/Data Visualtization.png" class="img-fluid"
-                                        alt="Data Visualization">
-                                    <p class="card-text text-muted fs-6">
-                                        Data Visualization focuses on representing data in graphical formats like
-                                        charts, graphs, and dashboards.
-                                    </p>
-                                    <!-- <div class="popup">
-                                        <p>Data Visualization simplifies complex datasets, enabling better understanding and communication of insights to stakeholders.</p>
-                                    </div> -->
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-        </section>
-
-        <!-- PORTFOLIO  SECTION'S -->
-        <br>
-        <section class="portfolio-section">
-            <h2>Portfolio</h2>
-            <br>
-            <hr>
-            <br>
-            <div class="portfolio-grid">
-                <div class="portfolio-item">
-                    <img src="Assets/Project/E-Commerece.jpg" alt="Project 1">
-                    <div class="content">
-                        <h3>E Commerce Site </h3>
-                        <p>A responsive e-commerce website built using React and Node.js.</p>
-                        <a href="#" target="_blank">View Project</a>
-                    </div>
-                </div>
-
-                <div class="portfolio-item">
-                    <img src="Assets/Project/Portfolio.jpg" alt="Project 3">
-                    <div class="content">
-                        <h3> Portfolio Website </h3>
-                        <p>A showcase portfolio website built using HTML, CSS, and JavaScript</p>
-                        <a href="#" target="_blank">View Project</a>
-                    </div>
-                </div>
-
-                <div class="portfolio-item">
-                    <img src="Assets/Project/Django And Bootstrap.jpg" alt="Project 3">
-                    <div class="content">
-                        <h3> Blog Application</h3>
-                        <p>A blog application developed using Django and Bootstrap.</p>
-                        <a href="#" target="_blank">View Project</a>
-                    </div>
-                </div>
-
-                <div class="portfolio-item">
-                    <img src="Assets/Project/Tic Tac Toe.jpg" alt="Project 3">
-                    <div class="content">
-                        <h3> Tic Tac Toe Game</h3>
-                        <p>A tic tac toe game developed using JavaScript and HTML/CSS.</p>
-                        <a href="#" target="_blank">View Project</a>
-                    </div>
-                </div>
-
-                <div class="portfolio-item">
-                    <img src="Assets/Project/Calculator.jpg" alt="Project 3">
-                    <div class="content">
-                        <h3> Calculator Application</h3>
-                        <p>A calculator application developed using JavaScript and HTML/CSS.</p>
-                        <a href="#" target="_blank">View Project</a>
-                    </div>
-                </div>
-
-                <div class="portfolio-item">
-                    <img src="Assets/Project/Real Time Applications.jpg" alt="Project 4">
-                    <div class="content">
-                        <h3> Real Time Aplications</h3>
-                        <p>A real-time chat application using Socket.IO and Express.js.</p>
-                        <a href="#" target="_blank">View Project</a>
-                    </div>
-                </div>
-            </div>
-            <br>
-        </section>
-
-
-        <!-- CERTIFICATION SECTION'S -->
-        <section id="certificates" class="certificates-section py-5">
-            <div class="container">
-                <h2 class="text-center mb-5">Certificates</h2>
-                <hr>
-                <br>
-                <div class="row g-4">
-                    <!-- Certificate Card 1 -->
-                    <div class="col-md-6 col-lg-4">
-                        <div class="certificate-card">
-                            <div class="certificate-image-wrapper">
-                                <img src="Assets/Certificate/Aziz Chharchhodawala  - Microsoft Copilot Certificate_page-0001 (1).jpg"
-                                    alt="Microsoft Copilot Certificate" class="certificate-image" />
-                            </div>
-                            <div class="certificate-details">
-                                <h3>Microsoft Copilot</h3>
-                                <p>Issued by: Microsoft</p>
-                                <p>Completion Date: 11/10/2024</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Certificate Card 2 -->
-                    <div class="col-md-6 col-lg-4">
-                        <div class="certificate-card">
-                            <div class="certificate-image-wrapper">
-                                <img src="Assets/Certificate/Jobaajlearnings-Certificate.jpg"
-                                    alt="Jobaaj Learnings Certificate" class="certificate-image" />
-                            </div>
-                            <div class="certificate-details">
-                                <h3>Jobaaj Learnings</h3>
-                                <p>Issued by: Jobaaj</p>
-                                <p>Completion Date: 02/09/2024Y</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Certificate Card 3 -->
-                    <div class="col-md-6 col-lg-4">
-                        <div class="certificate-card">
-                            <div class="certificate-image-wrapper">
-                                <img src="Assets/Certificate/COODYTECH - INTRODUCTION TO CSS_page-0001.jpg"
-                                    alt="Introduction to CSS" class="certificate-image" />
-                            </div>
-                            <div class="certificate-details">
-                                <h3>Introduction to CSS</h3>
-                                <p>Issued by: CoodyTech</p>
-                                <p>Completion Date: 07/02/2024</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Certificate Card 4 -->
-                    <div class="col-md-6 col-lg-4">
-                        <div class="certificate-card">
-                            <div class="certificate-image-wrapper">
-                                <img src="Assets/Certificate/COODYTECH-HTML FUNDAMENTAL'S_page-0001.jpg"
-                                    alt="HTML Fundamentals" class="certificate-image" />
-                            </div>
-                            <div class="certificate-details">
-                                <h3>HTML Fundamentals</h3>
-                                <p>Issued by: CoodyTech</p>
-                                <p>Completion Date: 06/27/2024</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Certificate Card 5 -->
-                    <div class="col-md-6 col-lg-4">
-                        <div class="certificate-card">
-                            <div class="certificate-image-wrapper">
-                                <img src="Assets/Certificate/Saylor (Computer Communication & Networking)_page-0001.jpg"
-                                    alt="Computer Communication & Networking" class="certificate-image" />
-                            </div>
-                            <div class="certificate-details">
-                                <h3>Computer Communication & Networking</h3>
-                                <p>Issued by: Saylor Academy</p>
-                                <p>Completion Date: 22/12/2024</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Certificate Card 6 -->
-                    <div class="col-md-6 col-lg-4">
-                        <div class="certificate-card">
-                            <div class="certificate-image-wrapper">
-                                <img src="Assets/Certificate/UC-3c740944-0bb5-4c03-830c-e8be32c2b734.jpg"
-                                    alt="Certificate 6" class="certificate-image" />
-                            </div>
-                            <div class="certificate-details">
-                                <h3>CSS - Completion</h3>
-                                <p>Udemy Organization </p>
-                                <p>Completion Date: 09/09/2024</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- END OF CERTIFICATION SECTION -->
-    </main>
-
-    <!-- END OF MAIN SECTION -->
-
-    <!-- FOOTER SECTION -->
-
-    <footer class="footer-section py-5">
+    <section id="about" class="section">
         <div class="container">
-            <!-- Row 1: About and Social Links -->
-            <div class="row align-items-center mb-4">
-                <!-- About -->
-                <div class="col-md-6 text-center text-md-start">
-                    <h3 class="footer-title mb-3">About This Portfolio</h3>
-                    <p class="footer-description">
-                        Crafted with passion by <strong>Aziz Chharchhodawala</strong>, this portfolio showcases
-                        projects, certificates, and skills. Let's connect and build amazing things together!
-                    </p>
+            <h2 class="section-title">About Me</h2>
+            <div class="about-grid">
+                <div class="about-card scroll-reveal">
+                    <i class="fas fa-briefcase icon"></i>
+                    <h3>Business-First Mindset</h3>
+                    <p>ROI, decisions, and outcomes drive every analysis I perform. I don't just query data; I answer business questions.</p>
                 </div>
-
-                <!-- Social Links -->
-                <div class="col-md-6 text-center text-md-end">
-                    <h3 class="footer-title mb-3">Stay Connected</h3>
-                    <div class="social-links">
-                        <a href="https://github.com/yourgithub" target="_blank" class="social-icon github"><i
-                                class="fab fa-github"></i></a>
-                        <a href="https://www.instagram.com/yourinsta" target="_blank" class="social-icon instagram"><i
-                                class="fab fa-instagram"></i></a>
-                        <a href="https://www.linkedin.com/in/yourlinkedin" target="_blank"
-                            class="social-icon linkedin"><i class="fab fa-linkedin"></i></a>
-                        <a href="mailto:yourmail@example.com" target="_blank" class="social-icon email"><i
-                                class="fas fa-envelope"></i></a>
-                    </div>
+                <div class="about-card scroll-reveal delay-100">
+                    <i class="fas fa-database icon"></i>
+                    <h3>SQL & Analytics Depth</h3>
+                    <p>My core strength. I understand the business context and schema before writing a single line of query.</p>
+                </div>
+                <div class="about-card scroll-reveal delay-200">
+                    <i class="fas fa-lightbulb icon"></i>
+                    <h3>Problem Solving</h3>
+                    <p>From identifying pain points to cleaning messy datasets, I deliver actionable recommendations.</p>
                 </div>
             </div>
+        </div>
+    </section>
 
-            <!-- Row 2: Navigation Links -->
-            <div class="row">
-                <div class="col text-center">
-                    <ul class="footer-nav list-inline mb-4">
-                        <li class="list-inline-item"><a href="#about">About Me</a></li>
-                        <li class="list-inline-item"><a href="#projects">Projects</a></li>
-                        <li class="list-inline-item"><a href="#certificates">Certificates</a></li>
-                        <li class="list-inline-item"><a href="#contact">Contact</a></li>
+    <section id="projects" class="section bg-darker">
+        <div class="container">
+            <h2 class="section-title">Featured Projects</h2>
+            <div class="projects-grid">
+                
+                <div class="project-card scroll-reveal">
+                    <div class="project-image">
+                        <div class="overlay">
+                            <i class="fas fa-shopping-cart"></i>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>E-commerce Sales Analysis</h3>
+                        <p class="project-problem">Problem: Delivery Latency</p>
+                        <div class="tags">
+                            <span>SQL</span><span>Power BI</span><span>Python</span>
+                        </div>
+                        <div class="impact-box">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Reduced delivery latency by 15% via route optimization.</span>
+                        </div>
+                        <div class="project-btns">
+                            <a href="#" class="btn btn-sm btn-primary">View Case Study</a>
+                            <a href="#" class="btn btn-sm btn-outline">Dashboard</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card scroll-reveal delay-100">
+                    <div class="project-image churn-img">
+                        <div class="overlay">
+                            <i class="fas fa-users-slash"></i>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>Customer Churn Analysis</h3>
+                        <div class="tags">
+                            <span>Python</span><span>Pandas</span><span>Seaborn</span>
+                        </div>
+                        <div class="impact-box">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Identified $240k revenue at risk from high-value churners.</span>
+                        </div>
+                        <div class="project-btns">
+                            <a href="#" class="btn btn-sm btn-primary">View Case Study</a>
+                            <a href="#" class="btn btn-sm btn-outline">GitHub Repo</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card scroll-reveal delay-200">
+                    <div class="project-image roi-img">
+                        <div class="overlay">
+                            <i class="fas fa-chart-line"></i>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>Marketing Campaign ROI</h3>
+                        <div class="tags">
+                            <span>Power BI</span><span>DAX</span><span>Excel</span>
+                        </div>
+                        <div class="impact-box">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Optimized ad spend allocation by 22% (Simulated).</span>
+                        </div>
+                        <div class="project-btns">
+                            <a href="#" class="btn btn-sm btn-primary">View Case Study</a>
+                            <a href="#" class="btn btn-sm btn-outline">Dashboard</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section id="skills" class="section">
+        <div class="container">
+            <h2 class="section-title">Technical Skills</h2>
+            <div class="skills-grid">
+                <div class="skill-card scroll-reveal">
+                    <div class="skill-header">
+                        <i class="fas fa-database"></i>
+                        <h3>SQL & Databases</h3>
+                    </div>
+                    <ul>
+                        <li>Advanced Joins & CTEs</li>
+                        <li>Window Functions</li>
+                        <li>Query Optimization</li>
+                        <li>Data Modeling</li>
+                    </ul>
+                </div>
+
+                <div class="skill-card scroll-reveal delay-100">
+                    <div class="skill-header">
+                        <i class="fab fa-python"></i>
+                        <h3>Python Analytics</h3>
+                    </div>
+                    <ul>
+                        <li>Pandas & NumPy</li>
+                        <li>EDA Pipelines</li>
+                        <li>Automation Scripts</li>
+                        <li>Data Cleaning</li>
+                    </ul>
+                </div>
+
+                <div class="skill-card scroll-reveal delay-200">
+                    <div class="skill-header">
+                        <i class="fas fa-chart-bar"></i>
+                        <h3>Visualization</h3>
+                    </div>
+                    <ul>
+                        <li>Power BI (DAX)</li>
+                        <li>Dashboard Storytelling</li>
+                        <li>KPI Design</li>
+                        <li>Interactive Reports</li>
+                    </ul>
+                </div>
+
+                <div class="skill-card scroll-reveal delay-300">
+                    <div class="skill-header">
+                        <i class="fas fa-tools"></i>
+                        <h3>Excel & Tools</h3>
+                    </div>
+                    <ul>
+                        <li>Power Query</li>
+                        <li>Pivot Tables</li>
+                        <li>Git/GitHub</li>
+                        <li>Jupyter Notebooks</li>
                     </ul>
                 </div>
             </div>
+        </div>
+    </section>
 
-            <!-- Row 3: Copyright -->
-            <div class="row">
-                <div class="col text-center">
-                    <p class="mb-0">
-                        &copy; <span id="year"></span> <strong>Aziz Chharchhodawala</strong>. All Rights Reserved.
-                    </p>
+    <section id="experience" class="section bg-darker">
+        <div class="container">
+            <h2 class="section-title">Experience & Learning Path</h2>
+            <div class="timeline">
+                
+                <div class="timeline-item scroll-reveal">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <h3>Data Analytics Personal Projects</h3>
+                        <span class="date">Present</span>
+                        <p>Executing end-to-end simulations of business scenarios. Cleaning, modeling, and analyzing datasets of over 1M rows to derive actionable insights.</p>
+                    </div>
+                </div>
+
+                <div class="timeline-item scroll-reveal delay-100">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <h3>Advanced SQL & Python Learning</h3>
+                        <span class="date">2023 - Present</span>
+                        <p>Intensive self-study and practical application of advanced SQL concepts (Window Functions, Optimization) and Python for data analysis.</p>
+                    </div>
+                </div>
+
+                <div class="timeline-item scroll-reveal delay-200">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <h3>Bachelor of Computer Applications (BCA)</h3>
+                        <span class="date">2021 - 2024</span>
+                        <p>Building a strong foundation in Database Management Systems (DBMS), programming logic, and software development lifecycles.</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <footer id="contact" class="footer">
+        <div class="container text-center">
+            <h2 class="scroll-reveal">Open to Data Analyst Internships & Roles</h2>
+            <p class="scroll-reveal">SQL-Focused | Business-Driven | Immediate Availability</p>
+            <div class="footer-btns scroll-reveal">
+                <a href="mailto:email@example.com" class="btn btn-primary">Email Me</a>
+                <a href="#" class="btn btn-outline">LinkedIn</a>
+            </div>
+            <div class="footer-bottom">
+                <p>Built with HTML/CSS by Aziz Chharchhodawala © 2025</p>
+                <div class="socials">
+                    <a href="#"><i class="fab fa-github"></i></a>
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                    <a href="#"><i class="fas fa-envelope"></i></a>
                 </div>
             </div>
         </div>
     </footer>
 
-    <!-- END OF FOOTER SECTION -->
-    
-    <!-- Popper and Bootstrap JS -->
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
-        integrity="sha384-IQsoLXlE+PpTTT9S9QO3jWl+7gE7o+u3e5n+6p6n2i9gEL/+u6k36Z0cl6OJl8/2"
-        crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-        crossorigin="anonymous"></script>
-</body
+    <script src="script.js"></script>
+</body>
+</html>
