@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aziz Chharchhodawala | Data Analyst</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="logo">AC<span class="dot">.data</span></div>
+        <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#certifications">Certifications</a></li>
+            <li><a href="#contact" class="btn-nav">Contact Me</a></li>
+        </ul>
+        <div class="hamburger"><i class="fas fa-bars"></i></div>
+    </nav>
+
+    <header class="hero">
+        <div class="container hero-container">
+            <div class="hero-content fade-in-up">
+                <h1>Aziz <br> <span class="highlight">Chharchhodawala</span></h1>
+                <h2 class="subtitle">Data Analyst | SQL • Excel • Power BI</h2>
+                <p>I analyze simulated real-world data to generate clear, decision-ready insights through project-based case studies focused on supply chain and revenue analysis.</p>
+                
+                <div class="hero-btns">
+                    <a href="#projects" class="btn btn-primary">View Case Studies</a>
+                    <a href="#" class="btn btn-outline">Download Resume</a>
+                </div>
+
+                <div class="social-links">
+                    <div class="social-item">
+                        <a href="#" target="_blank"><i class="fab fa-linkedin"></i></a>
+                        <span class="social-tooltip">LinkedIn</span>
+                    </div>
+                    <div class="social-item">
+                        <a href="#" target="_blank"><i class="fab fa-github"></i></a>
+                        <span class="social-tooltip">GitHub</span>
+                    </div>
+                    <div class="social-item">
+                        <a href="#contact"><i class="fas fa-envelope"></i></a>
+                        <span class="social-tooltip">Email Me</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="hero-visual fade-in-up delay-200">
+                <div class="floating-icon icon-sql"><i class="fas fa-database"></i></div>
+                <div class="floating-icon icon-py"><i class="fab fa-python"></i></div>
+                <div class="floating-icon icon-bi"><i class="fas fa-chart-pie"></i></div>
+
+                <div class="mockup-card">
+                    <div class="mockup-header">
+                        <span class="dot-icon red"></span>
+                        <span class="dot-icon yellow"></span>
+                        <span class="dot-icon green"></span>
+                        <span class="mockup-title">Sales_Performance_Q4.sql</span>
+                    </div>
+                    <div class="mockup-body">
+                        <div class="stat-row">
+                            <div class="stat"><h3>~500K+</h3><p>Rows Analyzed</p></div>
+                            <div class="stat"><h3>5+</h3><p>End-to-end Case Studies</p></div>
+                            <div class="stat"><h3>SQL/BI</h3><p>Dashboards Built</p></div>
+                        </div>
+                        <p class="stat-disclaimer">Across multiple simulated, real-world datasets</p>
+                        
+                        <div class="chart-visual">
+                            <canvas id="heroChart"></canvas>
+                            <div id="chartTooltip" class="chart-tooltip"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section id="about" class="section">
+        <div class="container">
+            <h2 class="section-title">Who I Am</h2>
+            <div class="about-grid">
+                <div class="about-card scroll-reveal">
+                    <i class="fas fa-briefcase icon"></i>
+                    <h3>Business-First Mindset</h3>
+                    <p>Defined KPIs and business questions before analysis in every project.</p>
+                </div>
+                <div class="about-card scroll-reveal delay-100">
+                    <i class="fas fa-database icon"></i>
+                    <h3>SQL & Analytics Depth</h3>
+                    <p>Used joins, CTEs, and window functions in churn and cohort analyses.</p>
+                </div>
+                <div class="about-card scroll-reveal delay-200">
+                    <i class="fas fa-lightbulb icon"></i>
+                    <h3>Problem Solving</h3>
+                    <p>Cleaned messy raw data to ensure 100% accuracy in reporting.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="section bg-darker">
+        <div class="container">
+            <h2 class="section-title">Featured Projects</h2>
+            <div class="projects-grid">
+                
+                <div class="project-card scroll-reveal">
+                    <div class="project-image">
+                        <div class="overlay"><i class="fas fa-shopping-cart"></i></div>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-context">Logistics | Simulated Case Study</div>
+                        <h3>Delivery Route Optimization</h3>
+                        <p style="font-size: 0.9rem; color: var(--text-muted); margin-bottom:10px;">Identified delivery cost inefficiencies caused by specific zone overlaps.</p>
+                        <div class="tags"><span>SQL</span><span>Power BI</span><span>Python</span></div>
+                        <div class="impact-box"><i class="fas fa-check-circle"></i><span>Projected savings of ₹12 Lakhs/year via route optimization.</span></div>
+                        <div class="project-btns"><a href="#" class="btn btn-sm btn-primary">Read Business Case</a><a href="#" class="btn btn-sm btn-outline">Dashboard</a></div>
+                    </div>
+                </div>
+
+                <div class="project-card scroll-reveal delay-100">
+                    <div class="project-image churn-img">
+                        <div class="overlay"><i class="fas fa-users-slash"></i></div>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-context">E-commerce | Simulated Case Study</div>
+                        <h3>Revenue Retention Analysis</h3>
+                        <p style="font-size: 0.9rem; color: var(--text-muted); margin-bottom:10px;">Pinpointed high-value customer segments at risk of churning.</p>
+                        <div class="tags"><span>Python</span><span>Pandas</span><span>Seaborn</span></div>
+                        <div class="impact-box"><i class="fas fa-check-circle"></i><span>Identified ₹40 Lakhs revenue at risk from high-value segments.</span></div>
+                        <div class="project-btns"><a href="#" class="btn btn-sm btn-primary">Read Business Case</a><a href="#" class="btn btn-sm btn-outline">GitHub Repo</a></div>
+                    </div>
+                </div>
+
+                <div class="project-card scroll-reveal delay-200">
+                    <div class="project-image roi-img">
+                        <div class="overlay"><i class="fas fa-chart-line"></i></div>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-context">Marketing | Simulated Case Study</div>
+                        <h3>Ad Spend Efficiency</h3>
+                        <p style="font-size: 0.9rem; color: var(--text-muted); margin-bottom:10px;">Reallocated budget from underperforming channels to boost ROAS.</p>
+                        <div class="tags"><span>Power BI</span><span>DAX</span><span>Excel</span></div>
+                        <div class="impact-box"><i class="fas fa-check-circle"></i><span>Optimized ad budget to increase ROAS by 22%.</span></div>
+                        <div class="project-btns"><a href="#" class="btn btn-sm btn-primary">Read Business Case</a><a href="#" class="btn btn-sm btn-outline">Dashboard</a></div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section id="skills" class="section">
+        <div class="container">
+            <h2 class="section-title">Technical Skills</h2>
+            <div class="skills-grid">
+                
+                <div class="skill-card scroll-reveal">
+                    <div class="skill-header"><i class="fas fa-database"></i><h3>SQL & Databases</h3></div>
+                    <ul>
+                        <li>Advanced Joins & CTEs</li>
+                        <li>Window Functions</li>
+                        <li>Query Optimization</li>
+                        <li>Data Modeling</li>
+                    </ul>
+                </div>
+
+                <div class="skill-card scroll-reveal delay-100">
+                    <div class="skill-header"><i class="fab fa-python"></i><h3>Python Analytics</h3></div>
+                    <ul>
+                        <li>Pandas & NumPy</li>
+                        <li>EDA Pipelines</li>
+                        <li>Automation Scripts</li>
+                        <li>Jupyter Notebooks</li>
+                    </ul>
+                </div>
+
+                <div class="skill-card scroll-reveal delay-200">
+                    <div class="skill-header"><i class="fas fa-chart-pie"></i><h3>Business Intelligence</h3></div>
+                    <ul>
+                        <li>Power BI (DAX) & Storytelling</li>
+                        <li>Excel & Pivot Tables</li>
+                        <li>Power Query & ETL</li>
+                        <li>KPI Design & Reporting</li>
+                    </ul>
+                </div>
+
+                <div class="skill-card scroll-reveal delay-300">
+                    <div class="skill-header"><i class="fas fa-code"></i><h3>Supporting Tools</h3></div>
+                    <ul>
+                        <li>HTML5 & CSS3 (Reports)</li>
+                        <li>Git & GitHub (Version Control)</li>
+                        <li>Command Line Basics</li>
+                        <li>Data Validation</li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section id="experience" class="section bg-darker">
+        <div class="container">
+            <h2 class="section-title">Timeline</h2>
+            <div class="timeline">
+                <div class="timeline-item scroll-reveal">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <h3>Independent Data Analyst (Project-Based)</h3>
+                        <span class="date">Present</span>
+                        <p>Simulating end-to-end business scenarios. Cleaning and analyzing datasets (1M+ rows) to derive actionable insights for Indian e-commerce contexts.</p>
+                    </div>
+                </div>
+                <div class="timeline-item scroll-reveal delay-100">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <h3>Bachelor of Computer Applications (BCA)</h3>
+                        <span class="date">2024 - 2027</span>
+                        <p><strong>Sigma University</strong><br>Building a strong foundation in DBMS, Programming Logic, Web Development, and Software Engineering.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="certifications" class="section">
+        <div class="container">
+            <h2 class="section-title">Certifications</h2>
+            <div class="about-grid">
+                <div class="about-card">
+                    <i class="fas fa-certificate icon"></i>
+                    <h3>Google Data Analytics</h3>
+                    <p style="font-size:0.9rem;">(Data Cleaning, R, Visualization, Capstone)</p>
+                    <a href="#" style="color:var(--primary); font-size:0.8rem; display:inline-block; margin-top:10px;">View Credential</a>
+                </div>
+                <div class="about-card">
+                    <i class="fas fa-certificate icon"></i>
+                    <h3>SQL Advanced (HackerRank)</h3>
+                    <p style="font-size:0.9rem;">(Window Functions, Optimization, Indexing)</p>
+                    <a href="#" style="color:var(--primary); font-size:0.8rem; display:inline-block; margin-top:10px;">View Credential</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer id="contact" class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <div class="footer-logo">AC<span class="dot">.data</span></div>
+                    <p class="footer-desc">Open to Data Analyst Internships & Entry-Level Roles. Focused on solving business problems through data.</p>
+                    <div class="social-links" style="margin-top:20px;">
+                        <a href="#" class="social-item" style="font-size:1.2rem; color:white;"><i class="fab fa-linkedin"></i></a>
+                        <a href="#" class="social-item" style="font-size:1.2rem; color:white;"><i class="fab fa-github"></i></a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h3 class="footer-title">Quick Links</h3>
+                    <ul class="footer-links">
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#projects">Projects</a></li>
+                        <li><a href="#skills">Skills</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3 class="footer-title">Location</h3>
+                    <div class="footer-contact-item"><i class="fas fa-map-marker-alt"></i><span>Gujarat, India</span></div>
+                    <div class="footer-contact-item"><i class="fas fa-briefcase"></i><span>Available for Hire</span></div>
+                </div>
+                <div class="footer-col">
+                    <h3 class="footer-title">Email Me</h3>
+                    <div class="email-action-container">
+                        <input type="text" class="email-display" value="azizchharchhoda52@gmail.com" readonly>
+                        <a href="mailto:azizchharchhoda52@gmail.com" class="btn-send-mail"><i class="fas fa-paper-plane"></i> Send Email</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Aziz Chharchhodawala. All rights reserved.</p>
+                <p>Designed by Aziz.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
